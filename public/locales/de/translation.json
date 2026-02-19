@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "PDF-Magic",
+    "subtitle": "Kostenlose PDF-Werkzeuge direkt im Browser",
+    "privacy": "Alle Dateien werden nur lokal in deinem Browser verarbeitet. Nichts wird hochgeladen."
+  },
+  "nav": {
+    "home": "Startseite",
+    "myFiles": "Meine Dateien",
+    "merge": "Zusammenführen",
+    "split": "Aufteilen",
+    "extract": "Seiten extrahieren",
+    "trim": "Seiten entfernen"
+  },
+  "home": {
+    "heroTitle": "PDF-Dateien bearbeiten",
+    "heroHighlight": "kostenlos & sicher",
+    "heroSubtitle": "Alle Verarbeitung findet direkt in deinem Browser statt. Keine Dateien werden auf Server hochgeladen.",
+    "mergeCard": {
+      "title": "PDFs zusammenführen",
+      "description": "Mehrere PDF-Dateien zu einer zusammenfügen"
+    },
+    "splitCard": {
+      "title": "PDF aufteilen",
+      "description": "Eine PDF-Datei in mehrere Teile aufteilen"
+    },
+    "extractCard": {
+      "title": "Seiten extrahieren",
+      "description": "Bestimmte Seiten aus einer PDF-Datei herausholen"
+    },
+    "trimCard": {
+      "title": "Seiten entfernen",
+      "description": "Unerwünschte Seiten aus einer PDF-Datei löschen"
+    }
+  },
+  "dropzone": {
+    "instruction": "PDF-Datei hierher ziehen oder klicken zum Auswählen",
+    "instructionMulti": "PDF-Dateien hierher ziehen oder klicken zum Auswählen",
+    "invalidType": "Nur PDF-Dateien werden akzeptiert",
+    "fileAdded": "{{name}} hinzugefügt ({{pages}} Seiten)"
+  },
+  "actions": {
+    "merge": "Zusammenführen",
+    "split": "Aufteilen",
+    "extract": "Extrahieren",
+    "trim": "Entfernen",
+    "download": "Herunterladen",
+    "downloadAll": "Alle herunterladen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "reset": "Zurücksetzen",
+    "delete": "Löschen",
+    "processing": "Wird verarbeitet...",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "pages": {
+    "selectAll": "Alle auswählen",
+    "deselectAll": "Alle abwählen",
+    "selected": "{{count}} Seite(n) ausgewählt",
+    "rangeInput": "Seitenbereiche eingeben (z.B. 1-3, 5, 7-9)",
+    "pageOf": "Seite {{current}} von {{total}}",
+    "splitAfter": "Trennen nach Seite {{page}}"
+  },
+  "merge": {
+    "title": "PDFs zusammenführen",
+    "description": "Lade mehrere PDF-Dateien hoch und füge sie in der gewünschten Reihenfolge zusammen.",
+    "filesLoaded": "{{count}} Datei(en) geladen",
+    "reorderHint": "Ziehe die Dateien in die gewünschte Reihenfolge"
+  },
+  "split": {
+    "title": "PDF aufteilen",
+    "description": "Lade eine PDF-Datei hoch und wähle die Stellen, an denen sie aufgeteilt werden soll.",
+    "resultCount": "{{count}} Teil(e) erstellt"
+  },
+  "extract": {
+    "title": "Seiten extrahieren",
+    "description": "Lade eine PDF-Datei hoch und wähle die Seiten, die du extrahieren möchtest.",
+    "noSelection": "Bitte wähle mindestens eine Seite aus"
+  },
+  "trim": {
+    "title": "Seiten entfernen",
+    "description": "Lade eine PDF-Datei hoch und wähle die Seiten, die du entfernen möchtest.",
+    "noSelection": "Bitte wähle mindestens eine Seite aus",
+    "allSelected": "Du kannst nicht alle Seiten entfernen"
+  },
+  "myFiles": {
+    "title": "Meine Dateien",
+    "description": "Hier findest du alle gespeicherten PDF-Dateien.",
+    "noFiles": "Noch keine Dateien gespeichert",
+    "noFilesHint": "Bearbeite ein PDF und speichere das Ergebnis, um es hier zu sehen.",
+    "confirmDelete": "Möchtest du diese Datei wirklich löschen?",
+    "savedAt": "Gespeichert am {{date}}",
+    "fileSize": "{{size}}"
+  },
+  "storage": {
+    "savedLocally": "Lokal gespeichert",
+    "syncedToCloud": "In der Cloud gespeichert",
+    "loginForCloud": "Anmelden für Cloud-Speicher",
+    "savingLocal": "Wird lokal gespeichert...",
+    "saved": "Gespeichert!"
+  },
+  "errors": {
+    "loadFailed": "PDF konnte nicht geladen werden",
+    "processingFailed": "Verarbeitung fehlgeschlagen",
+    "invalidPdf": "Die Datei ist kein gültiges PDF"
+  },
+  "footer": {
+    "openSource": "Open Source auf GitHub",
+    "privacy": "Keine Dateien verlassen deinen Browser"
+  }
+}

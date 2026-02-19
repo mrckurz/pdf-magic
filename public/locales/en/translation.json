@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "PDF-Magic",
+    "subtitle": "Free PDF tools right in your browser",
+    "privacy": "All files are processed locally in your browser. Nothing is uploaded."
+  },
+  "nav": {
+    "home": "Home",
+    "myFiles": "My Files",
+    "merge": "Merge",
+    "split": "Split",
+    "extract": "Extract Pages",
+    "trim": "Remove Pages"
+  },
+  "home": {
+    "heroTitle": "Edit PDF files",
+    "heroHighlight": "free & secure",
+    "heroSubtitle": "All processing happens directly in your browser. No files are uploaded to any server.",
+    "mergeCard": {
+      "title": "Merge PDFs",
+      "description": "Combine multiple PDF files into one"
+    },
+    "splitCard": {
+      "title": "Split PDF",
+      "description": "Split a PDF file into multiple parts"
+    },
+    "extractCard": {
+      "title": "Extract Pages",
+      "description": "Extract specific pages from a PDF file"
+    },
+    "trimCard": {
+      "title": "Remove Pages",
+      "description": "Delete unwanted pages from a PDF file"
+    }
+  },
+  "dropzone": {
+    "instruction": "Drag & drop a PDF file here, or click to select",
+    "instructionMulti": "Drag & drop PDF files here, or click to select",
+    "invalidType": "Only PDF files are accepted",
+    "fileAdded": "{{name}} added ({{pages}} pages)"
+  },
+  "actions": {
+    "merge": "Merge",
+    "split": "Split",
+    "extract": "Extract",
+    "trim": "Remove",
+    "download": "Download",
+    "downloadAll": "Download All",
+    "save": "Save",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "delete": "Delete",
+    "processing": "Processing...",
+    "backToHome": "Back to Home"
+  },
+  "pages": {
+    "selectAll": "Select all",
+    "deselectAll": "Deselect all",
+    "selected": "{{count}} page(s) selected",
+    "rangeInput": "Enter page ranges (e.g. 1-3, 5, 7-9)",
+    "pageOf": "Page {{current}} of {{total}}",
+    "splitAfter": "Split after page {{page}}"
+  },
+  "merge": {
+    "title": "Merge PDFs",
+    "description": "Upload multiple PDF files and combine them in your desired order.",
+    "filesLoaded": "{{count}} file(s) loaded",
+    "reorderHint": "Drag files to reorder them"
+  },
+  "split": {
+    "title": "Split PDF",
+    "description": "Upload a PDF file and select where to split it.",
+    "resultCount": "{{count}} part(s) created"
+  },
+  "extract": {
+    "title": "Extract Pages",
+    "description": "Upload a PDF file and select the pages you want to extract.",
+    "noSelection": "Please select at least one page"
+  },
+  "trim": {
+    "title": "Remove Pages",
+    "description": "Upload a PDF file and select the pages you want to remove.",
+    "noSelection": "Please select at least one page",
+    "allSelected": "You cannot remove all pages"
+  },
+  "myFiles": {
+    "title": "My Files",
+    "description": "Here you can find all your saved PDF files.",
+    "noFiles": "No files saved yet",
+    "noFilesHint": "Edit a PDF and save the result to see it here.",
+    "confirmDelete": "Are you sure you want to delete this file?",
+    "savedAt": "Saved on {{date}}",
+    "fileSize": "{{size}}"
+  },
+  "storage": {
+    "savedLocally": "Saved locally",
+    "syncedToCloud": "Saved to cloud",
+    "loginForCloud": "Sign in for cloud storage",
+    "savingLocal": "Saving locally...",
+    "saved": "Saved!"
+  },
+  "errors": {
+    "loadFailed": "Failed to load PDF",
+    "processingFailed": "Processing failed",
+    "invalidPdf": "The file is not a valid PDF"
+  },
+  "footer": {
+    "openSource": "Open source on GitHub",
+    "privacy": "No files leave your browser"
+  }
+}
