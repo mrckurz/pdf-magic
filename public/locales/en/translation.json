@@ -106,6 +106,21 @@
   },
   "footer": {
     "openSource": "Open source on GitHub",
-    "privacy": "No files leave your browser"
+    "privacy": "No files leave your browser",
+    "impressum": "Legal Notice"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "legalTitle": "Information according to § 5 ECG / Disclosure according to § 25 Austrian Media Act",
+    "owner": "FH-Prof. DI Dr. Marc Kurz\nIT-Consulting & Software Architecture",
+    "contact": "Contact",
+    "disclosureTitle": "Disclosure according to § 25 Austrian Media Act",
+    "disclosureText": "Media owner: FH-Prof. DI Dr. Marc Kurz. Basic orientation: Information about PDF tools and their browser-based usage.",
+    "liabilityTitle": "Disclaimer",
+    "liabilityText": "Despite careful content control, no liability is assumed for the content of external links. The operators of the linked pages are solely responsible for their content.",
+    "copyrightTitle": "Copyright",
+    "copyrightText": "All contents of this site (texts, images, code examples) are subject to copyright. Use without express permission is not permitted.",
+    "odrTitle": "Online Dispute Resolution",
+    "odrText": "EU Commission platform for online dispute resolution:"
   }
 }

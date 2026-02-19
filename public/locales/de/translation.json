@@ -106,6 +106,21 @@
   },
   "footer": {
     "openSource": "Open Source auf GitHub",
-    "privacy": "Keine Dateien verlassen deinen Browser"
+    "privacy": "Keine Dateien verlassen deinen Browser",
+    "impressum": "Impressum"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "legalTitle": "Angaben gemäß § 5 ECG / Offenlegung laut § 25 MedienG",
+    "owner": "FH-Prof. DI Dr. Marc Kurz\nIT-Consulting & Softwarearchitektur",
+    "contact": "Kontakt",
+    "disclosureTitle": "Offenlegung gemäß § 25 MedienG",
+    "disclosureText": "Medieninhaber: FH-Prof. DI Dr. Marc Kurz. Grundlegende Richtung: Information über PDF-Werkzeuge und deren Nutzung im Browser.",
+    "liabilityTitle": "Haftungsausschluss",
+    "liabilityText": "Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    "copyrightTitle": "Urheberrecht",
+    "copyrightText": "Alle Inhalte dieser Seite (Texte, Bilder, Codebeispiele) unterliegen dem Urheberrecht. Eine Verwendung ohne ausdrückliche Genehmigung ist nicht gestattet.",
+    "odrTitle": "Online-Streitbeilegung",
+    "odrText": "Plattform der EU-Kommission zur Online-Streitbeilegung:"
   }
 }

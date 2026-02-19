@@ -8,6 +8,7 @@ import { SplitPage } from './pages/SplitPage';
 import { ExtractPage } from './pages/ExtractPage';
 import { TrimPage } from './pages/TrimPage';
 import { MyFilesPage } from './pages/MyFilesPage';
+import { ImpressumPage } from './pages/ImpressumPage';
 
 function LoadingFallback() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/extract" element={<ExtractPage />} />
               <Route path="/trim" element={<TrimPage />} />
               <Route path="/my-files" element={<MyFilesPage />} />
+              <Route path="/impressum" element={<ImpressumPage />} />
             </Routes>
           </Suspense>
         </main>

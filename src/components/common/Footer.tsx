@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export function Footer() {
@@ -22,14 +23,23 @@ export function Footer() {
           </svg>
           {t('footer.privacy')}
         </div>
-        <a
-          href="https://github.com/mrckurz/pdf-magic"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary transition-colors"
-        >
-          {t('footer.openSource')}
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://github.com/mrckurz/pdf-magic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            {t('footer.openSource')}
+          </a>
+          <span className="text-gray-300">·</span>
+          <Link
+            to="/impressum"
+            className="hover:text-primary transition-colors"
+          >
+            {t('footer.impressum')}
+          </Link>
+        </div>
       </div>
     </footer>
   );
