@@ -4,7 +4,7 @@
 
 PDF-Magic ist ein web-basiertes Tool zum Bearbeiten von PDF-Dateien. Alle Verarbeitung findet **direkt im Browser** statt — keine Dateien werden auf Server hochgeladen. Deine Daten bleiben privat.
 
-> **[Live Demo](https://mrckurz.github.io/pdf-magic/)**
+> **[PDF-Magic öffnen](https://mrckurz.github.io/pdf-magic/)**
 
 ---
 
@@ -43,6 +43,23 @@ PDF-Magic ist ein web-basiertes Tool zum Bearbeiten von PDF-Dateien. Alle Verarb
 | [React Router](https://reactrouter.com/) | Client-seitiges Routing |
 | [@dnd-kit](https://dndkit.com/) | Drag & Drop Sortierung |
 | [Zustand](https://zustand.docs.pmnd.rs/) | State Management |
+| [Vitest](https://vitest.dev/) | Unit Testing |
+
+---
+
+## Tests
+
+Unit-Tests decken die Kern-PDF-Operationen (merge, split, extract, trim) und die lokale Speicherung (IndexedDB) ab.
+
+```bash
+# Tests einmalig ausführen
+npm test
+
+# Tests im Watch-Modus (während der Entwicklung)
+npm run test:watch
+```
+
+Tests laufen automatisch in der CI-Pipeline vor dem Build — fehlschlagende Tests verhindern das Deployment.
 
 ---
 
