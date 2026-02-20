@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 export function Header() {
   const { t } = useTranslation();
@@ -16,13 +17,13 @@ export function Header() {
   ];
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">PDF</span>
           </div>
-          <span className="font-bold text-xl text-gray-900 group-hover:text-primary transition-colors">
+          <span className="font-bold text-xl text-gray-900 dark:text-white group-hover:text-primary transition-colors">
             {t('app.title')}
           </span>
         </Link>
@@ -35,7 +36,7 @@ export function Header() {
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                 location.pathname === item.path
                   ? 'bg-primary/10 text-primary'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               }`}
             >
               {item.label}
@@ -43,7 +44,10 @@ export function Header() {
           ))}
         </nav>
 
-        <LanguageSwitcher />
+        <div className="flex items-center gap-1">
+          <ThemeSwitcher />
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   );

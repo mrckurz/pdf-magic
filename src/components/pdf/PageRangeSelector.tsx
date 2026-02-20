@@ -52,7 +52,7 @@ export function PageRangeSelector({
         value={input}
         onChange={(e) => handleChange(e.target.value)}
         placeholder={t('pages.rangeInput')}
-        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-sm"
+        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-sm"
       />
     </div>
   );

@@ -104,6 +104,11 @@
     "processingFailed": "Processing failed",
     "invalidPdf": "The file is not a valid PDF"
   },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "system": "System preference"
+  },
   "footer": {
     "openSource": "Open source on GitHub",
     "privacy": "No files leave your browser",

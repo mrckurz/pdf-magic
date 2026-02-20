@@ -50,11 +50,11 @@ export function HomePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
           {t('home.heroTitle')} —{' '}
           <span className="text-primary">{t('home.heroHighlight')}</span>
         </h1>
-        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
           {t('home.heroSubtitle')}
         </p>
       </div>
@@ -64,7 +64,7 @@ export function HomePage() {
           <Link
             key={tool.path}
             to={tool.path}
-            className="group bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-primary/30 transition-all"
+            className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg hover:border-primary/30 transition-all"
           >
             <div className="flex items-start gap-4">
               <div
@@ -73,10 +73,10 @@ export function HomePage() {
                 {tool.icon}
               </div>
               <div>
-                <h2 className="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
                   {t(`home.${tool.key}.title`)}
                 </h2>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   {t(`home.${tool.key}.description`)}
                 </p>
               </div>

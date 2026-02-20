@@ -80,12 +80,12 @@ export function TrimPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{t('trim.title')}</h1>
-        <p className="text-gray-500 mt-1">{t('trim.description')}</p>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('trim.title')}</h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-1">{t('trim.description')}</p>
       </div>
 
       {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+        <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-400 text-sm">
           {error}
         </div>
       )}
@@ -96,13 +96,13 @@ export function TrimPage() {
         <div className="space-y-4">
           <div className="flex items-center justify-between flex-wrap gap-2">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-500">
+              <span className="text-sm text-gray-500 dark:text-gray-400">
                 {t('pages.selected', { count: selectedPages.size })}
               </span>
               <button onClick={selectAll} className="text-sm text-primary hover:underline">
                 {t('pages.selectAll')}
               </button>
-              <button onClick={deselectAll} className="text-sm text-gray-500 hover:underline">
+              <button onClick={deselectAll} className="text-sm text-gray-500 dark:text-gray-400 hover:underline">
                 {t('pages.deselectAll')}
               </button>
             </div>
@@ -136,7 +136,7 @@ export function TrimPage() {
             </button>
             <button
               onClick={reset}
-              className="px-4 py-2.5 text-gray-600 hover:text-gray-900 transition-colors"
+              className="px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               {t('actions.reset')}
             </button>

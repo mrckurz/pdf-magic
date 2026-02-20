@@ -104,6 +104,11 @@
     "processingFailed": "Verarbeitung fehlgeschlagen",
     "invalidPdf": "Die Datei ist kein gültiges PDF"
   },
+  "theme": {
+    "light": "Helles Design",
+    "dark": "Dunkles Design",
+    "system": "Systemeinstellung"
+  },
   "footer": {
     "openSource": "Open Source auf GitHub",
     "privacy": "Keine Dateien verlassen deinen Browser",
