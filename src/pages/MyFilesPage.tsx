@@ -47,22 +47,22 @@ export function MyFilesPage() {
   };
 
   const operationLabels: Record<string, { label: string; color: string }> = {
-    merge: { label: t('nav.merge'), color: 'bg-blue-100 text-blue-700' },
-    split: { label: t('nav.split'), color: 'bg-amber-100 text-amber-700' },
-    extract: { label: t('nav.extract'), color: 'bg-green-100 text-green-700' },
-    trim: { label: t('nav.trim'), color: 'bg-red-100 text-red-700' },
+    merge: { label: t('nav.merge'), color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' },
+    split: { label: t('nav.split'), color: 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400' },
+    extract: { label: t('nav.extract'), color: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' },
+    trim: { label: t('nav.trim'), color: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400' },
   };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{t('myFiles.title')}</h1>
-        <p className="text-gray-500 mt-1">{t('myFiles.description')}</p>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('myFiles.title')}</h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-1">{t('myFiles.description')}</p>
       </div>
 
       {!files || files.length === 0 ? (
         <div className="text-center py-16">
-          <div className="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
+          <div className="w-16 h-16 mx-auto mb-4 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center">
             <svg
               className="w-8 h-8 text-gray-400"
               fill="none"
@@ -77,7 +77,7 @@ export function MyFilesPage() {
               />
             </svg>
           </div>
-          <p className="text-gray-500 font-medium">{t('myFiles.noFiles')}</p>
+          <p className="text-gray-500 dark:text-gray-400 font-medium">{t('myFiles.noFiles')}</p>
           <p className="text-sm text-gray-400 mt-1">{t('myFiles.noFilesHint')}</p>
           <Link
             to="/"
@@ -91,16 +91,16 @@ export function MyFilesPage() {
           {files.map((file) => {
             const op = operationLabels[file.operation] || {
               label: file.operation,
-              color: 'bg-gray-100 text-gray-700',
+              color: 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
             };
             return (
               <div
                 key={file.id}
-                className={`flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 transition-opacity ${
+                className={`flex items-center gap-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 transition-opacity ${
                   deletingId === file.id ? 'opacity-50' : ''
                 }`}
               >
-                <div className="w-12 h-16 rounded-lg overflow-hidden border border-gray-200 flex-shrink-0 bg-gray-50">
+                <div className="w-12 h-16 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 flex-shrink-0 bg-gray-50 dark:bg-gray-800">
                   {file.thumbnail ? (
                     <img
                       src={file.thumbnail}
@@ -115,10 +115,10 @@ export function MyFilesPage() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <p className="font-medium text-gray-900 truncate">
+                  <p className="font-medium text-gray-900 dark:text-white truncate">
                     {file.name}
                   </p>
-                  <div className="flex items-center gap-2 mt-1 text-xs text-gray-500">
+                  <div className="flex items-center gap-2 mt-1 text-xs text-gray-500 dark:text-gray-400">
                     <span>{formatBytes(file.sizeBytes)}</span>
                     <span>·</span>
                     <span>{file.pageCount} Seiten</span>
@@ -137,7 +137,7 @@ export function MyFilesPage() {
                 <div className="flex items-center gap-1 flex-shrink-0">
                   <button
                     onClick={() => handleDownload(file)}
-                    className="p-2 text-gray-400 hover:text-primary transition-colors rounded-lg hover:bg-gray-50"
+                    className="p-2 text-gray-400 hover:text-primary transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
                     title={t('actions.download')}
                   >
                     <svg
@@ -157,7 +157,7 @@ export function MyFilesPage() {
                   <button
                     onClick={() => file.id && handleDelete(file.id)}
                     disabled={deletingId === file.id}
-                    className="p-2 text-gray-400 hover:text-red-500 transition-colors rounded-lg hover:bg-gray-50"
+                    className="p-2 text-gray-400 hover:text-red-500 transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
                     title={t('actions.delete')}
                   >
                     <svg

@@ -57,10 +57,10 @@ export function PageThumbnail({
       className={`relative group cursor-pointer rounded-lg overflow-hidden border-2 transition-all ${
         isSelected
           ? 'border-primary ring-2 ring-primary/20'
-          : 'border-gray-200 hover:border-gray-300'
+          : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
       }`}
     >
-      <div className="aspect-[3/4] bg-gray-100 flex items-center justify-center">
+      <div className="aspect-[3/4] bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
         {thumbnail ? (
           <img
             src={thumbnail}
@@ -77,7 +77,7 @@ export function PageThumbnail({
           className={`absolute top-2 right-2 w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
             isSelected
               ? 'bg-primary border-primary'
-              : 'bg-white/80 border-gray-300 group-hover:border-primary/50'
+              : 'bg-white/80 dark:bg-gray-800/80 border-gray-300 dark:border-gray-600 group-hover:border-primary/50'
           }`}
         >
           {isSelected && (

@@ -47,12 +47,12 @@ function SortableFileItem({
     <div
       ref={setNodeRef}
       style={style}
-      className="flex items-center gap-3 bg-white border border-gray-200 rounded-lg p-3 hover:shadow-sm transition-shadow"
+      className="flex items-center gap-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 hover:shadow-sm transition-shadow"
     >
       <button
         {...attributes}
         {...listeners}
-        className="cursor-grab active:cursor-grabbing text-gray-400 hover:text-gray-600"
+        className="cursor-grab active:cursor-grabbing text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
@@ -62,7 +62,7 @@ function SortableFileItem({
         <span className="text-primary font-bold text-xs">PDF</span>
       </div>
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium text-gray-900 truncate">{file.name}</p>
+        <p className="text-sm font-medium text-gray-900 dark:text-white truncate">{file.name}</p>
         <p className="text-xs text-gray-500">{file.pageCount} Seiten</p>
       </div>
       <button
@@ -151,12 +151,12 @@ export function MergePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{t('merge.title')}</h1>
-        <p className="text-gray-500 mt-1">{t('merge.description')}</p>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('merge.title')}</h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-1">{t('merge.description')}</p>
       </div>
 
       {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+        <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-400 text-sm">
           {error}
         </div>
       )}
@@ -210,7 +210,7 @@ export function MergePage() {
                 </button>
                 <button
                   onClick={reset}
-                  className="px-4 py-2.5 text-gray-600 hover:text-gray-900 transition-colors"
+                  className="px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
                   {t('actions.reset')}
                 </button>

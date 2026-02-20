@@ -5,8 +5,8 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-white border-t border-gray-200 mt-auto">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500">
+    <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-auto">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500 dark:text-gray-400">
         <div className="flex items-center gap-1">
           <svg
             className="w-4 h-4"
@@ -32,7 +32,7 @@ export function Footer() {
           >
             {t('footer.openSource')}
           </a>
-          <span className="text-gray-300">·</span>
+          <span className="text-gray-300 dark:text-gray-600">·</span>
           <Link
             to="/impressum"
             className="hover:text-primary transition-colors"

@@ -68,12 +68,12 @@ export function SplitPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{t('split.title')}</h1>
-        <p className="text-gray-500 mt-1">{t('split.description')}</p>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('split.title')}</h1>
+        <p className="text-gray-500 dark:text-gray-400 mt-1">{t('split.description')}</p>
       </div>
 
       {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+        <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-400 text-sm">
           {error}
         </div>
       )}
@@ -82,7 +82,7 @@ export function SplitPage() {
 
       {pdfData && !results && (
         <div className="space-y-4">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
             {t('split.resultCount', { count: splitPoints.size + 1 })}
           </p>
 
@@ -101,7 +101,7 @@ export function SplitPage() {
                     className={`absolute -bottom-2 left-1/2 -translate-x-1/2 z-10 px-2 py-0.5 rounded-full text-xs font-medium transition-all ${
                       splitPoints.has(page)
                         ? 'bg-amber-500 text-white shadow-md'
-                        : 'bg-gray-200 text-gray-500 hover:bg-amber-100 hover:text-amber-700'
+                        : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-amber-100 dark:hover:bg-amber-900/30 hover:text-amber-700'
                     }`}
                     title={t('pages.splitAfter', { page })}
                   >
@@ -124,7 +124,7 @@ export function SplitPage() {
             </button>
             <button
               onClick={reset}
-              className="px-4 py-2.5 text-gray-600 hover:text-gray-900 transition-colors"
+              className="px-4 py-2.5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               {t('actions.reset')}
             </button>

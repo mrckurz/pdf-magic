@@ -37,16 +37,16 @@ export function FileDropzone({
       {...getRootProps()}
       className={`border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-all ${
         disabled
-          ? 'border-gray-200 bg-gray-50 cursor-not-allowed opacity-60'
+          ? 'border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 cursor-not-allowed opacity-60'
           : isDragActive
             ? 'border-primary bg-primary/5 scale-[1.01]'
-            : 'border-gray-300 hover:border-primary/50 hover:bg-gray-50'
+            : 'border-gray-300 dark:border-gray-600 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-800'
       }`}
     >
       <input {...getInputProps()} />
       <div className="flex flex-col items-center gap-3">
         <div
-          className={`w-14 h-14 rounded-full flex items-center justify-center ${isDragActive ? 'bg-primary/10' : 'bg-gray-100'}`}
+          className={`w-14 h-14 rounded-full flex items-center justify-center ${isDragActive ? 'bg-primary/10' : 'bg-gray-100 dark:bg-gray-700'}`}
         >
           <svg
             className={`w-7 h-7 ${isDragActive ? 'text-primary' : 'text-gray-400'}`}
@@ -62,7 +62,7 @@ export function FileDropzone({
             />
           </svg>
         </div>
-        <p className="text-gray-600 font-medium">
+        <p className="text-gray-600 dark:text-gray-300 font-medium">
           {multiple ? t('dropzone.instructionMulti') : t('dropzone.instruction')}
         </p>
         <p className="text-sm text-gray-400">PDF</p>
