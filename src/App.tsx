@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
+import { PwaInstallBanner } from './components/common/PwaInstallBanner';
 import { HomePage } from './pages/HomePage';
 import { MergePage } from './pages/MergePage';
 import { SplitPage } from './pages/SplitPage';
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <HashRouter>
       <div className="min-h-screen flex flex-col">
+        <PwaInstallBanner />
         <Header />
         <main className="flex-1">
           <Suspense fallback={<LoadingFallback />}>

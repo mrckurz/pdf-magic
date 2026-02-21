@@ -1,9 +1,57 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'pwa-icon.svg'],
+      manifest: {
+        name: 'PDF-Magic',
+        short_name: 'PDF-Magic',
+        description: 'Free PDF tools right in your browser. Merge, split, extract, and remove pages — all offline.',
+        theme_color: '#6366f1',
+        background_color: '#f8fafc',
+        display: 'standalone',
+        scope: '/pdf-magic/',
+        start_url: '/pdf-magic/',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2,json}'],
+        runtimeCaching: [
+          {
+            urlPattern: /\/locales\/.*\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'i18n-cache',
+            },
+          },
+        ],
+      },
+    }),
+  ],
   test: {
     globals: true,
     environment: 'node',
