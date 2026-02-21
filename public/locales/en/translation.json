@@ -104,6 +104,10 @@
     "processingFailed": "Processing failed",
     "invalidPdf": "The file is not a valid PDF"
   },
+  "pwa": {
+    "installHint": "Install PDF-Magic as an app for offline use",
+    "install": "Install"
+  },
   "theme": {
     "light": "Light mode",
     "dark": "Dark mode",
